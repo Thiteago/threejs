@@ -263,7 +263,10 @@ document.querySelector('#view-work').addEventListener('click', (e) => {
     x: 0,
     y: 1000,
     z: 0,
-    ease: 'expo.in'
+    ease: 'expo.in',
+    onComplete: () => {
+      window.location.replace('http://www.github.com/thiteago')
+    }
   })
 })
 
