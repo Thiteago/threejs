@@ -236,3 +236,33 @@ gsap.to('#view-work', {
   y: 0,
   ease: 'expo'
 })
+
+document.querySelector('#view-work').addEventListener('click', (e) => {
+  e.preventDefault()
+  gsap.to('#container', {
+    opacity: 0,
+  })
+
+  gsap.to(camera.position, {
+    duration: 2,
+    z: 25,
+    ease: 'expo.inOut'
+  })
+
+  gsap.to(camera.rotation,{
+    duration: 2,
+    x: 1.57,
+    y: 0,
+    z: 0,
+    ease: 'expo.inOut'
+  })
+
+  gsap.to(camera.position, {
+    duration: 1,
+    delay: 2,
+    x: 0,
+    y: 1000,
+    z: 0,
+    ease: 'expo.in'
+  })
+})
