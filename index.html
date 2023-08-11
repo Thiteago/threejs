@@ -6,9 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thiago David</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,700&family=Space+Mono&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body{
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .font-exo{
+        font-family: 'Exo 2', sans-serif;
+      }
+      .font-space-mono{
+        font-family: 'Space Mono', monospace;
+      }
+    </style>
   </head>
-  <body>
-    <div id="app"></div>
+  <body class="m-0 p-0">
+    <div id="app">
+      <div style="transform: translate(-50%, -50%);" class="absolute text-white text-center top-2/4 left-2/4">
+        <h1 class="font-space-mono text-sm uppercase tracking-wide">Thiago David</h1>
+        <p class="font-exo text-4xl">Software Engineer</p>
+        <a href="http://www.github.com/thiteago" target="_blank" class="border px-4 inline-block py-2 rounded font-space-mono uppercase mt-8 hover:bg-white hover:text-gray-800">View Work</a>
+      </div>
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
