@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thiago David</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,700&family=Space+Mono&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body{
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .font-exo{
+        font-family: 'Exo 2', sans-serif;
+      }
+      .font-space-mono{
+        font-family: 'Space Mono', monospace;
+      }
+    </style>
+  </head>
+  <body class="m-0 p-0">
+    <div id="app">
+      <div id="container" style="transform: translate(-50%, -50%);" class="absolute text-white text-center top-2/4 left-2/4 max-w-2xl w-full px-6">
+        <h1 style="transform: translateY(30px);" id="name-title" class="font-space-mono text-sm uppercase tracking-wide opacity-0">Thiago David</h1>
+        <p style="transform: translateY(30px);" id="office" class="font-exo text-4xl opacity-0">Software Engineer</p>
+        <a style="transform: translateY(30px);" id="view-work" href="http://www.github.com/thiteago" target="_blank" class="border px-4 inline-block py-2 rounded font-space-mono uppercase mt-8 hover:bg-white hover:text-gray-800 opacity-0">My Github</a>
+      </div>
+    </div>
+    <script type="module" src="/index.js"></script>
+  </body>
+</html>
